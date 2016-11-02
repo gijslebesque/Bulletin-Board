@@ -1,0 +1,23 @@
+html
+	head
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css")
+	body
+		nav
+			div(class="nav-wrapper")
+				div(class="container")
+					a(href="#" class="brand-logo") Bulletin Board
+					ul(id="nav-mobile" class="right hide-on-med-and-down")
+						li: a(href="index.pug") Home
+						li: a(href="sass.html") Messages
+
+		div(class="container")
+			form(class="col s12", method="post")
+				div(class="row")
+					div(class="input-field col s12")
+						input(placeholder='Title' id="first_name2" type="text" class="validate")
+				div(class="row")
+					div(class="input-field col s12")
+						textarea(id="textarea1", class="materialize-textarea", placeholder='Message', name)
+
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js")
