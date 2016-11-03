@@ -3,21 +3,24 @@ html
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css")
 	body
 		nav
-			div(class="nav-wrapper")
+			div(class="nav-wrapper blue-grey darken-1")
 				div(class="container")
 					a(href="#" class="brand-logo") Bulletin Board
 					ul(id="nav-mobile" class="right hide-on-med-and-down")
-						li: a(href="index.pug") Home
-						li: a(href="sass.html") Messages
+						li: a(href="/") Home
+						li: a(href="messages") Messages
 
 		div(class="container")
 			form(class="col s12", method="post")
 				div(class="row")
 					div(class="input-field col s12")
-						input(placeholder='Title' id="first_name2" type="text" class="validate")
+						input(placeholder='Title' id="first_name2" type="text" class="validate" name='title')
 				div(class="row")
 					div(class="input-field col s12")
-						textarea(id="textarea1", class="materialize-textarea", placeholder='Message', name)
+						textarea(id="textarea1" class="materialize-textarea" placeholder='Message' name='body')
+				div(class="row")
+					button(class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action") Submit
+   
 
 
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js")
