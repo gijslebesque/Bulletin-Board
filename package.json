@@ -1,4 +1,4 @@
-x§{
+{
   "name": "bulletin_board",
   "version": "1.0.0",
   "description": "",
@@ -20,6 +20,7 @@ x§{
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "pg": "^6.1.0",
-    "pug": "^2.0.0-beta6"
+    "pug": "^2.0.0-beta6",
+    "sequelize": "^3.24.8"
   }
 }
