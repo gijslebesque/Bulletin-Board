@@ -24,7 +24,7 @@ const Messages = db.define('messages', {
 	
 app.post('/', (req, res) => {
 	//sync with db
-	db.sync({force:true}).then(()=>{
+	db.sync().then(()=>{ // with {force:true}, clear database
 		console.log('Synced with db')
 		Messages.create({
 			title: req.body.title,
